@@ -2,6 +2,9 @@ import streamlit as st
 import os
 from datetime import datetime
 import json
+import numpy as np
+import random
+import matplotlib.pyplot as plt
 
 # Dictionnaires de traduction
 TRANSLATIONS = {
@@ -454,10 +457,6 @@ def main() -> None:
                     st.info("Logo Convergence non trouvé")
             except Exception:
                 st.info("Erreur lors du chargement du logo")
-            
-            # PDF CV
-            st.markdown("**📄 Ressources associées :**")
-            st.markdown("[📋 CV Matthieu Moreau-Le Breton](CV_generalist_matthieu_moreau-le_breton.pdf)")
         
         st.markdown('<div class="tag tag-orange">ESG</div>', unsafe_allow_html=True)
         st.markdown('<div class="tag">Innovation</div>', unsafe_allow_html=True)

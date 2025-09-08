@@ -102,13 +102,13 @@ Site_MMLB_streamlit/
 ## 🔧 Configuration
 
 ### Variables d'environnement
-L'application utilise les paramètres par défaut de Streamlit. Vous pouvez les personnaliser en créant un fichier `.streamlit/config.toml` :
+L'application utilise les paramètres par défaut de Streamlit. Vous pouvez les personnaliser en créant un fichier `.streamlit/config.toml` (déjà présent pour le déploiement Cloud) :
 
 ```toml
 [server]
 port = 8501
-address = "localhost"
-headless = false
+address = "0.0.0.0"
+headless = true
 
 [browser]
 gatherUsageStats = false
