@@ -1,18 +1,9 @@
 [server]
 headless = true
 enableCORS = false
+enableXsrfProtection = false
 port = 8501
 address = "0.0.0.0"
-
-[browser]
-gatherUsageStats = false
-
-[server]
-port = 8501
-address = "localhost"
-headless = false
-enableCORS = false
-enableXsrfProtection = false
 
 [browser]
 gatherUsageStats = false
@@ -22,6 +13,3 @@ primaryColor = "#001F3F"
 backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#f0f2f6"
 textColor = "#262730"
-
-
-
